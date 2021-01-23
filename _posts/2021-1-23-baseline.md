@@ -4,7 +4,7 @@ tags: TeXt
 mathjax: true
 mathjax_autoNumber: true
 comment: true
-key: A321
+key: !!A321
 ---
 
 123123
