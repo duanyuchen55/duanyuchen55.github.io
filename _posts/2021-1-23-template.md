@@ -7,4 +7,4 @@ comment: true
 key: template
 ---
 
-This is a template.
+This is an article template.
