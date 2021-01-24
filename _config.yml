@@ -129,7 +129,7 @@ comments:
   gitalk:
     clientID    : 7b579f0132b53f958a3c # GitHub Application Client ID
     clientSecret: 4091d4439f52ab3862ddf3d24b3833814f3d2872 # GitHub Application Client Secret
-    repository  : jekyll_blog_comment # GitHub repo
+    repository  : duanyuchen55.github.io # GitHub repo
     owner       : duanyuchen55 # GitHub repo owner
     admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
