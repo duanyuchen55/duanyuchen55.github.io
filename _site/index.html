@@ -299,32 +299,53 @@
 <div class="layout--articles">
 <div class="article-list items items--divided">
 <article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/01/24/test.html"><h2 itemprop="headline" class="item__header">test</h2></a></header>
+          <header><a href="/2021/01/23/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html"><h2 itemprop="headline" class="item__header">深度学习推荐系统笔记</h2></a></header>
           <div class="item__description">
-<div class="article__content" itemprop="description articleBody">12312311</div>
-<p><a href="/2021/01/24/test.html">Read more</a></p>
+<div class="article__content" itemprop="description articleBody">[toc]
+
+3.7 FM与深度学习模型的结合
+
+3.7.1 FNN——用FM的隐向量完成Embedding层初始化
+
+​		神经网络的参数初始化通常采用不包含任何先验信息的随机初始化，而Embedding层的输入极端稀疏化，导致Embedding层收敛缓慢，且Embedding层参数量占绝大部分，进而导致模型收敛受限于Embedding层。
+
+​		FNN模型解决上述问题的思路：使用FM模型训练好的各特征隐向量初始化Embedding层的参数（引入先验信息）书p79：图3-8及下面第一段话
+
+​		FNN模型也为Embedding预训练提供了借鉴思路。
+
+​
+
+3.7.2 DeepFM——用FM代替Wide部分
+
+​		FNN把FM的训练结果作为初始化权重，并未对神经网络的结构进行更...</div>
+<p><a href="/2021/01/23/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html">Read more</a></p>
 </div>
 <div class="article__info clearfix">
-<ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=TeXt">TeXt</a>
-            </li></ul>
+<ul class="left-col menu">
+<li>
+              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=DL">DL</a>
+            </li>
+<li>
+              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=RS">RS</a>
+            </li>
+</ul>
 <ul class="right-col menu"><li>
-<i class="far fa-calendar-alt"></i> <span>Jan 24, 2021</span>
+<i class="far fa-calendar-alt"></i> <span>Jan 23, 2021</span>
             </li></ul>
 </div>
 <meta itemprop="author" content="DuanYuchen">
-<meta itemprop="datePublished" content="2021-01-24T00:00:00+08:00">
-    <meta itemprop="keywords" content="TeXt">
+<meta itemprop="datePublished" content="2021-01-23T00:00:00+08:00">
+    <meta itemprop="keywords" content="DL,RS">
 </div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2021/01/23/baseline.html"><h2 itemprop="headline" class="item__header">baseline</h2></a></header>
+          <header><a href="/2021/01/23/template.html"><h2 itemprop="headline" class="item__header">template</h2></a></header>
           <div class="item__description">
-<div class="article__content" itemprop="description articleBody">12312311</div>
-<p><a href="/2021/01/23/baseline.html">Read more</a></p>
+<div class="article__content" itemprop="description articleBody">This is an article template.</div>
+<p><a href="/2021/01/23/template.html">Read more</a></p>
 </div>
 <div class="article__info clearfix">
 <ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=TeXt">TeXt</a>
+              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=template">template</a>
             </li></ul>
 <ul class="right-col menu"><li>
 <i class="far fa-calendar-alt"></i> <span>Jan 23, 2021</span>
@@ -332,7 +353,7 @@
 </div>
 <meta itemprop="author" content="DuanYuchen">
 <meta itemprop="datePublished" content="2021-01-23T00:00:00+08:00">
-    <meta itemprop="keywords" content="TeXt">
+    <meta itemprop="keywords" content="template">
 </div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2018/07/01/welcome.html"><h2 itemprop="headline" class="item__header">Welcome</h2></a></header>

@@ -1,5 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://duanyc.top//feed.xml" rel="self" type="application/atom+xml" /><link href="https://duanyc.top//" rel="alternate" type="text/html" /><updated>2021-01-24T18:15:59+08:00</updated><id>https://duanyc.top//feed.xml</id><title type="html">DuanYuchen’s Blog.</title><subtitle>Your Site Description
-</subtitle><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><entry><title type="html">test</title><link href="https://duanyc.top//2021/01/24/test.html" rel="alternate" type="text/html" title="test" /><published>2021-01-24T00:00:00+08:00</published><updated>2021-01-24T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/24/test</id><content type="html" xml:base="https://duanyc.top//2021/01/24/test.html">&lt;p&gt;12312311&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="TeXt" /><summary type="html">12312311</summary></entry><entry><title type="html">baseline</title><link href="https://duanyc.top//2021/01/23/baseline.html" rel="alternate" type="text/html" title="baseline" /><published>2021-01-23T00:00:00+08:00</published><updated>2021-01-23T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/23/baseline</id><content type="html" xml:base="https://duanyc.top//2021/01/23/baseline.html">&lt;p&gt;12312311&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="TeXt" /><summary type="html">12312311</summary></entry><entry><title type="html">Welcome</title><link href="https://duanyc.top//2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://duanyc.top//2018/07/01/welcome</id><content type="html" xml:base="https://duanyc.top//2018/07/01/welcome.html">&lt;p&gt;If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://duanyc.top//feed.xml" rel="self" type="application/atom+xml" /><link href="https://duanyc.top//" rel="alternate" type="text/html" /><updated>2021-01-24T19:44:04+08:00</updated><id>https://duanyc.top//feed.xml</id><title type="html">DuanYuchen’s Blog.</title><subtitle>Your Site Description
+</subtitle><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><entry><title type="html">深度学习推荐系统笔记</title><link href="https://duanyc.top//2021/01/23/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="深度学习推荐系统笔记" /><published>2021-01-23T00:00:00+08:00</published><updated>2021-01-23T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/23/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://duanyc.top//2021/01/23/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html">&lt;p&gt;[toc]&lt;/p&gt;
+
+&lt;h2 id=&quot;37-fm与深度学习模型的结合&quot;&gt;3.7 FM与深度学习模型的结合&lt;/h2&gt;
+
+&lt;h3 id=&quot;371-fnn用fm的隐向量完成embedding层初始化&quot;&gt;3.7.1 FNN——用FM的隐向量完成Embedding层初始化&lt;/h3&gt;
+
+&lt;p&gt;​		神经网络的参数初始化通常采用不包含任何先验信息的随机初始化，而Embedding层的输入极端稀疏化，导致Embedding层收敛缓慢，且Embedding层参数量占绝大部分，进而导致模型收敛受限于Embedding层。&lt;/p&gt;
+
+&lt;p&gt;​		FNN模型解决上述问题的思路：使用FM模型训练好的各特征隐向量初始化Embedding层的参数（引入先验信息）&lt;strong&gt;书p79：图3-8及下面第一段话&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;​		FNN模型也为Embedding预训练提供了借鉴思路。&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h3 id=&quot;372-deepfm用fm代替wide部分&quot;&gt;3.7.2 DeepFM——用FM代替Wide部分&lt;/h3&gt;
+
+&lt;p&gt;​		FNN把FM的训练结果作为初始化权重，并未对神经网络的结构进行更改。&lt;/p&gt;
+
+&lt;p&gt;​		DeepFM对Wide&amp;amp;Deep的改进在于：用FM替换了Wide部分，加强了浅层网络部分特征组合的能力。&lt;strong&gt;书p80：图3-9及下面第一段话&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;​		针对Wide&amp;amp;Deep的改进动机，DeepFM和Deep&amp;amp;Cross完全一样，只不过进行特征组合的方法不一样，前者使用FM，后者使用多层Cross网络。&lt;/p&gt;
+
+&lt;h3 id=&quot;373-nfmfm的神经网络化尝试&quot;&gt;3.7.3 NFM——FM的神经网络化尝试&lt;/h3&gt;
+
+&lt;p&gt;​		在数学形式上，NFM模型的主要思路是用一个表达能力更强的函数代替FM中的二阶隐向量内积的部分
+\(\hat{y}_{FM}(x) = w_0+\sum_{i=1}^N{w_ix_i}+\sum_{i=1}^N\sum_{j=i+1}^N{v_i^tv_j\cdot x_ix_j}\)&lt;/p&gt;
+
+\[\hat{y}_{NFM}(x)=w_0+\sum_{i=1}^{N}w_ix_i+f(x)\]
+
+&lt;p&gt;​		$f(x)$的构造工作可以交由某个深度学习网络来完成，并且通过BP来学习。&lt;/p&gt;
+
+&lt;p&gt;​		NFM的这个神经网络架构特点：在Embedding层和多层神经网络之间加入特征交叉池化层。&lt;/p&gt;
+
+&lt;p&gt;​		若把NFM的一阶部分看作一个线性模型，则NFM架构也可以视为Wide&amp;amp;Deep模型的进化。NFM模型对Wide&amp;amp;Deep模型的Deep部分加入了特征交叉池化层，加强了特征交叉。&lt;/p&gt;
+
+&lt;h3 id=&quot;374-基于fm的深度学习模型的优点和局限性&quot;&gt;3.7.4 基于FM的深度学习模型的优点和局限性&lt;/h3&gt;
+
+&lt;p&gt;FNN、DeepFM、NFM都是在经典的多层神经网络的基础上加入有针对性的特征交叉操作，使模型具有更强的非线性表达能力。&lt;/p&gt;
+
+&lt;p&gt;特征工程的思路已经穷尽了可能的尝试，提升空间很小。&lt;/p&gt;
+
+&lt;h2 id=&quot;38-注意力机制在推荐模型中的应用&quot;&gt;3.8 注意力机制在推荐模型中的应用&lt;/h2&gt;
+
+&lt;h3 id=&quot;381-afm引入注意力机制的fm&quot;&gt;3.8.1 AFM——引入注意力机制的FM&lt;/h3&gt;
+
+&lt;h3 id=&quot;382-din引入注意力机制的深度学习网络&quot;&gt;3.8.2 DIN——引入注意力机制的深度学习网络&lt;/h3&gt;
+
+&lt;h3 id=&quot;383-注意力机制对推荐系统的启发&quot;&gt;3.8.3 注意力机制对推荐系统的启发&lt;/h3&gt;
+
+&lt;h2 id=&quot;39-dien序列模型与推荐系统的结合&quot;&gt;3.9 DIEN——序列模型与推荐系统的结合&lt;/h2&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="DL" /><category term="RS" /><summary type="html">[toc] 3.7 FM与深度学习模型的结合 3.7.1 FNN——用FM的隐向量完成Embedding层初始化 ​ 神经网络的参数初始化通常采用不包含任何先验信息的随机初始化，而Embedding层的输入极端稀疏化，导致Embedding层收敛缓慢，且Embedding层参数量占绝大部分，进而导致模型收敛受限于Embedding层。 ​ FNN模型解决上述问题的思路：使用FM模型训练好的各特征隐向量初始化Embedding层的参数（引入先验信息）书p79：图3-8及下面第一段话 ​ FNN模型也为Embedding预训练提供了借鉴思路。 ​ 3.7.2 DeepFM——用FM代替Wide部分 ​ FNN把FM的训练结果作为初始化权重，并未对神经网络的结构进行更改。 ​ DeepFM对Wide&amp;amp;Deep的改进在于：用FM替换了Wide部分，加强了浅层网络部分特征组合的能力。书p80：图3-9及下面第一段话 ​ 针对Wide&amp;amp;Deep的改进动机，DeepFM和Deep&amp;amp;Cross完全一样，只不过进行特征组合的方法不一样，前者使用FM，后者使用多层Cross网络。 3.7.3 NFM——FM的神经网络化尝试 ​ 在数学形式上，NFM模型的主要思路是用一个表达能力更强的函数代替FM中的二阶隐向量内积的部分 \(\hat{y}_{FM}(x) = w_0+\sum_{i=1}^N{w_ix_i}+\sum_{i=1}^N\sum_{j=i+1}^N{v_i^tv_j\cdot x_ix_j}\) \[\hat{y}_{NFM}(x)=w_0+\sum_{i=1}^{N}w_ix_i+f(x)\] ​ $f(x)$的构造工作可以交由某个深度学习网络来完成，并且通过BP来学习。 ​ NFM的这个神经网络架构特点：在Embedding层和多层神经网络之间加入特征交叉池化层。 ​ 若把NFM的一阶部分看作一个线性模型，则NFM架构也可以视为Wide&amp;amp;Deep模型的进化。NFM模型对Wide&amp;amp;Deep模型的Deep部分加入了特征交叉池化层，加强了特征交叉。 3.7.4 基于FM的深度学习模型的优点和局限性 FNN、DeepFM、NFM都是在经典的多层神经网络的基础上加入有针对性的特征交叉操作，使模型具有更强的非线性表达能力。 特征工程的思路已经穷尽了可能的尝试，提升空间很小。 3.8 注意力机制在推荐模型中的应用 3.8.1 AFM——引入注意力机制的FM 3.8.2 DIN——引入注意力机制的深度学习网络 3.8.3 注意力机制对推荐系统的启发 3.9 DIEN——序列模型与推荐系统的结合</summary></entry><entry><title type="html">template</title><link href="https://duanyc.top//2021/01/23/template.html" rel="alternate" type="text/html" title="template" /><published>2021-01-23T00:00:00+08:00</published><updated>2021-01-23T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/23/template</id><content type="html" xml:base="https://duanyc.top//2021/01/23/template.html">&lt;p&gt;This is an article template.&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="template" /><summary type="html">This is an article template.</summary></entry><entry><title type="html">Welcome</title><link href="https://duanyc.top//2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://duanyc.top//2018/07/01/welcome</id><content type="html" xml:base="https://duanyc.top//2018/07/01/welcome.html">&lt;p&gt;If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:&lt;/p&gt;
 
 &lt;p&gt;You may want to &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration&quot;&gt;config the site&lt;/a&gt; or &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts&quot;&gt;writing a post&lt;/a&gt; next. Please feel free to &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/issues&quot;&gt;create an issue&lt;/a&gt; or &lt;a href=&quot;mailto:kitian616@outlook.com&quot;&gt;send me email&lt;/a&gt; if you have any questions.&lt;/p&gt;
 
