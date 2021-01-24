@@ -32,7 +32,7 @@
 				admin: ['{{ _admin }}'],
 				// id: '{{ md5(window.location.pathname) }}',
 				// id: '{{ page.key }}',
-				id: md5(page.key),
+				id: md5(window.location.pathname),
 			});
 			gitalk.render('js-gitalk-container');
 		});
