@@ -1,7 +1,7 @@
 ---
 title: Adversarial Examples on Graph Data(Deep Insights into Attack and Defense)
 tags: 
-    - paper
+    - Paper
     - GCN
     - Graph
     - Adversarial
@@ -79,12 +79,12 @@ $$
 为了删除边：我们要对全0矩阵逐渐增加边，来达到目前的状态，所以要把A或者X设置为全0矩阵；
 为了添加边：我们要对全1矩阵逐渐删除边，来达到目前的状态，所以要把A或者X设置为全1矩阵。
 
-![image-20210125190927497](C:\Users\duanyanwen\AppData\Roaming\Typora\typora-user-images\image-20210125190927497.png)
+![](https://cdn.jsdelivr.net/gh/duanyuchen55/ImageHosting/jekyll_pic/20210125213201.png)
 
 算法1显示了非目标IG-JSMA攻击的伪代码。我们计算获胜类别c的预测分数的积分梯度，即A和X的条目。
 然后，积分梯度被用作度量来测量在图G中扰动特定特征或边的优先级。注意，边和特征值被考虑，并且仅计算可能扰动的分数(见等式(7))。（例如，我们只计算在以前不存在边的情况下添加边的重要性。）因此，对于具有高扰动优先级的特征或边，我们只需将其翻转为不同的二进制值即可对其进行扰动。
 
-![image-20210125191012073](C:\Users\duanyanwen\AppData\Roaming\Typora\typora-user-images\image-20210125191012073.png)
+![](https://cdn.jsdelivr.net/gh/duanyuchen55/ImageHosting/jekyll_pic/20210125213201.png)
 
 
 
@@ -108,7 +108,7 @@ $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中�
 
 下图中可以看到，Adversarial Attack显著增加了与目标节点相似度得分较低的邻居节点的数量。
 
-![image-20210125114527890](C:\Users\duanyanwen\AppData\Roaming\Typora\typora-user-images\image-20210125114527890.png)
+![](https://cdn.jsdelivr.net/gh/duanyuchen55/ImageHosting/jekyll_pic/20210125213247.png)
 
 图神经网络本质上是根据图形结构聚合特征。对于目标节点，恶意创建的图试图将具有不同特征和标签的节点连接起来，以污染目标节点的表示，从而使目标节点与其正确类中的节点不那么相似。
 
@@ -116,7 +116,7 @@ $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中�
 
 基于这些观察结果，我们提出了另一个**假设，即上述防御方法之所以有效，是因为模型为连接目标节点的边赋予了较低的权重，这些边连接到与目标节点特征相似度较低的节点。**为了验证这一点，我们绘制了从目标节点开始的边的末端节点的学习权重和Jaccard相似性得分(参见下图)。请注意，对于我们选择的目标节点，目标节点的每个邻居与其自身之间的Jaccard相似性得分在干净的图中大于0。相似度得分为零的边都是由攻击添加的。正如预期的那样，该模型对大部分相似度分数较低的边学习到了低权重。
 
-![image-20210125114912808](C:\Users\duanyanwen\AppData\Roaming\Typora\typora-user-images\image-20210125114912808.png)
+![](https://cdn.jsdelivr.net/gh/duanyuchen55/ImageHosting/jekyll_pic/20210125213409.png)
 
 **为了使defense更有效，我们甚至不需要使用可学习的边权重作为defense。边权值的学习不可避免地会给模型引入额外的参数，这可能会影响模型的可扩展性和准确性。**基于以下几点，一种简单的方法可能同样有效：
 
