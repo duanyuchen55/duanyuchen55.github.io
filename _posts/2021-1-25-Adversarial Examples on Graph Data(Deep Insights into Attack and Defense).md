@@ -127,7 +127,7 @@ $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中�
 
 简化反而可能会导致性能提升，例如这些工作：
 
-![image-20210125115222154](C:\Users\duanyanwen\AppData\Roaming\Typora\typora-user-images\image-20210125115222154.png)
+![](https://cdn.jsdelivr.net/gh/duanyuchen55/ImageHosting/jekyll_pic/20210125213619.png)
 
 ## Evaluation
 
