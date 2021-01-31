@@ -4,7 +4,7 @@ tags:
     - Paper
     - GCN
     - Graph
-    - Adversarial
+    - Adversary
 mathjax: true
 mathjax_autoNumber: true
 comment: true
