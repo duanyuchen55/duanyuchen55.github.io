@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://duanyc.top//feed.xml" rel="self" type="application/atom+xml" /><link href="https://duanyc.top//" rel="alternate" type="text/html" /><updated>2021-01-31T21:51:24+08:00</updated><id>https://duanyc.top//feed.xml</id><title type="html">DuanYuchen’s Blog.</title><subtitle>Your Site Description
-</subtitle><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><entry><title type="html">Adversarial Sets for Regularising Neural Link Predictors</title><link href="https://duanyc.top//2021/01/31/Adversarial-Sets-for-Regularising-Neural-Link-Predictors.html" rel="alternate" type="text/html" title="Adversarial Sets for Regularising Neural Link Predictors" /><published>2021-01-31T00:00:00+08:00</published><updated>2021-01-31T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/31/Adversarial%20Sets%20for%20Regularising%20Neural%20Link%20Predictors</id><content type="html" xml:base="https://duanyc.top//2021/01/31/Adversarial-Sets-for-Regularising-Neural-Link-Predictors.html">&lt;p&gt;[toc]&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://duanyc.top//feed.xml" rel="self" type="application/atom+xml" /><link href="https://duanyc.top//" rel="alternate" type="text/html" /><updated>2021-02-04T21:40:07+08:00</updated><id>https://duanyc.top//feed.xml</id><title type="html">DuanYuchen’s Blog.</title><subtitle>Your Site Description
+</subtitle><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><entry><title type="html">arXiv上pdf下载速度慢的解决方法</title><link href="https://duanyc.top//2021/01/31/arXiv%E4%B8%8Apdf%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" rel="alternate" type="text/html" title="arXiv上pdf下载速度慢的解决方法" /><published>2021-01-31T00:00:00+08:00</published><updated>2021-01-31T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/31/arXiv%E4%B8%8Apdf%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95</id><content type="html" xml:base="https://duanyc.top//2021/01/31/arXiv%E4%B8%8Apdf%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;命令行直接下载：
+ arxiv 上的论文使用wget下载时需要加参数–user-agent=Lynx，速度才能较快：
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget --user-agent=Lynx https://arxiv.org/pdf/1608.00375&lt;/code&gt;
+  上述命令需要在Linux或者WSL的命令行中执行。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改网址：（不稳定）
+将https://arxiv.org改成 http://xxx.itp.ac.cn，网址其他部分不变。
+或者将https://arxiv.org改成http://cn.arxiv.org，网址其他部分不变。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="Tutorial" /><summary type="html">命令行直接下载： arxiv 上的论文使用wget下载时需要加参数–user-agent=Lynx，速度才能较快： wget --user-agent=Lynx https://arxiv.org/pdf/1608.00375 上述命令需要在Linux或者WSL的命令行中执行。 修改网址：（不稳定） 将https://arxiv.org改成 http://xxx.itp.ac.cn，网址其他部分不变。 或者将https://arxiv.org改成http://cn.arxiv.org，网址其他部分不变。</summary></entry><entry><title type="html">Adversarial Sets for Regularising Neural Link Predictors</title><link href="https://duanyc.top//2021/01/31/Adversarial-Sets-for-Regularising-Neural-Link-Predictors.html" rel="alternate" type="text/html" title="Adversarial Sets for Regularising Neural Link Predictors" /><published>2021-01-31T00:00:00+08:00</published><updated>2021-01-31T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/31/Adversarial%20Sets%20for%20Regularising%20Neural%20Link%20Predictors</id><content type="html" xml:base="https://duanyc.top//2021/01/31/Adversarial-Sets-for-Regularising-Neural-Link-Predictors.html">&lt;p&gt;[toc]&lt;/p&gt;
 
 &lt;h1 id=&quot;adversarial-sets-for-regularising-neural-link-predictors&quot;&gt;Adversarial Sets for Regularising Neural Link Predictors&lt;/h1&gt;
 
@@ -214,7 +226,7 @@ $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中�
 arXiv preprint arXiv:1810.10751,2018&lt;/p&gt;
 
 &lt;p&gt;Adversarial attacks on neural networks for graph data.
-In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp;amp; Data Mining, pages 2847–2856. ACM, 2018.&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="Paper" /><category term="GCN" /><category term="Graph" /><category term="Adversary" /><summary type="html">Adversarial Examples on Graph Data: Deep Insights into Attack and Defense Huijun Wu1,2, Chen Wang2, Yuriy Tyshetskiy2, Andrew Docherty2, Kai Lu3, Liming Zhu1,2 1University of New South Wales, Australia 2Data61, CSIRO 3National University of Defense Technology, China {first, second}@data61.csiro.au, kailu@nudt.edu.cn Summary 攻击：引入积分梯度，积分梯度被用作度量来测量在图G中扰动特定特征或边的优先级。对于具有高扰动优先级的特征或边，只需将其翻转为不同的二进制值即可对其进行扰动。 防御：在训练之前对给定的图进行预处理：检查图的邻接矩阵并检查边。选择连接具有低相似性分数的节点的所有边作为要移除的候选。 Research Objective(s) ​ 在本文中，我们提出了攻击和防御两种技术。对于攻击，我们证明了通过引入积分梯度可以很容易地解决离散性问题，它可以准确地反映扰动某些特征或边缘的效果，同时仍然受益于并行计算。在防御方面，我们观察到目标攻击的恶意操纵图在统计上与正常图不同。基于这一观察结果，我们提出了一种检测图形并恢复潜在敌方扰动的防御方法。 ​ 现有的攻击方法中：添加 连接着具有不同特征的节点的边 在所有攻击方法中都起着关键作用。 ​ 本文证明了对图的邻接矩阵进行简单的预处理就能识别出被操纵的边。对于具有bag of word(BOW)特征的节点，Jaccard索引在度量连接节点之间的相似性时是有效的。通过去除连接非常不同节点的边，我们能够在不降低GCN模型的准确性的情况下防御有针对性的对抗性攻击。 Problem Statement ​ 图的深度学习模型，如图卷积网络(GCN)，在处理图数据的任务上取得了显著的性能。与其他类型的深度模型类似，图深度学习模型经常遭受敌意攻击。然而，与非图数据相比，图数据的离散特征、图的连通性以及对潜伏扰动的不同定义给图数据的对抗性攻防带来了独特的挑战和机遇。 ​ 将在非图数据上的攻击方法，用在GCN上的挑战是离散输入问题。具体地说，图形节点的特征通常是离散的。边，特别是未加权图中的边，也是离散的。为了解决这个问题，基于贪婪的方法（下面的两篇文章1和2）来攻击基于图的深度学习系统。一种反复扰乱特征或图形结构的贪婪方法。图结构和特征统计在贪婪攻击期间被保留。在本文中，我们证明了尽管存在离散输入问题，但积分梯度仍然可以精确地逼近梯度。 Method(s) ​ 攻击：现有的攻击方法中，添加 连接着具有不同特征的节点的边 在所有攻击方法中都起着关键作用。 ​ 本文证明了对图的邻接矩阵进行简单的预处理就能识别出被操纵的边。对于具有bag of word(BOW)特征的节点，Jaccard索引在度量连接节点之间的相似性时是有效的。 ​ 防御：通过去除连接非常不同节点的边，我们能够在不降低GCN模型的准确性的情况下防御有针对性的对抗性攻击。 Integrated Gradients Guided Attack： 图表中的节点特征通常是词袋类型的特征，可以是1，也可以是0。图中未加权的边也经常用来表示特定关系的存在，因此邻接矩阵中只有1或0。当攻击该模型时，敌意扰动被限制为将1改为0，或者反之亦然。在图模型中应用普通的FGSM和JSMA的主要问题是梯度不准确。 给定目标节点t，对于FGSM攻击，$\nabla J_{W^{(1)},W^{(2)}}(t)=\frac{\sigma J_{W^{(1)},W^{(2)}}(t)}{\sigma X}$ ∂X测量所有节点对损失函数值的特征重要性。这里，X是特征矩阵，它的每一行描述了图中一个节点的特征。对于节点n的特定特征i，$\nabla J_{W^{(1)},W^{(2)}}$的较大值表示扰动特征i为1，有助于使目标节点分类错误。但是，遵循此梯度可能没有用，原因有两个： 首先，特征值可能已经是1，因此我们不能再对其进行扰动； 其次，即使特征值是0，由于GCN模型可能无法学习该特征值在0和1之间的局部线性函数，所以这种扰动的结果是不可预测的。 换句话说，原始的梯度存在局部梯度问题。（以一个简单的RELU网络f(X)=relu(X)为例，当x从0增加到1时，函数值也增加了1，但在x=0时计算梯度为0，不能准确地捕捉到模型的行为。） ​ 积分梯度定义如下：考虑一条从x0到输入x的直线路径，积分梯度是通过累加路径上所有点的所有梯度来获得的。 ​ 形式上，x的第i个特征，其积分梯度Integrate Gradient（IG）如下： \(IG_i(F(X))::=(x_i-\acute{x_i}) \times \int_{\alpha=0}^{1} \frac{\partial F(x'+\alpha x(x-x'))}{\partial x_i}d\alpha\) 在给定邻接矩阵A、特征矩阵X和目标节点t的情况下，我们计算函数$F_{W^{(1)},W^{(2)}}(A,X,t)$，其中I是攻击的输入。I=A表示边缘攻击，而I=X表示特征攻击。当F为GCN模型的损失函数时，我们将这种攻击技术称为积分梯度类FGSM攻击，即IG-FGSM。 对于有目标的的IG-JSMA或IG-FGSM攻击，优化目标是最大化F的值。因此，对于值为1的特征或边，我们选择IG得分最低的特征/边，并将其扰动为0。 非目标IG-JSMA攻击旨在最小化获胜类的预测得分，以便我们尝试将IG得分高的输入维度增加到0。 为了删除边：我们要对全0矩阵逐渐增加边，来达到目前的状态，所以要把A或者X设置为全0矩阵； 为了添加边：我们要对全1矩阵逐渐删除边，来达到目前的状态，所以要把A或者X设置为全1矩阵。 算法1显示了非目标IG-JSMA攻击的伪代码。我们计算获胜类别c的预测分数的积分梯度，即A和X的条目。 然后，积分梯度被用作度量来测量在图G中扰动特定特征或边的优先级。注意，边和特征值被考虑，并且仅计算可能扰动的分数(见等式(7))。（例如，我们只计算在以前不存在边的情况下添加边的重要性。）因此，对于具有高扰动优先级的特征或边，我们只需将其翻转为不同的二进制值即可对其进行扰动。 Defense for Adversarial Attack： 由于现有的针对GCN的attack都是有效的，因为attacked graph被直接用于训练新模型。基于此，一种可行的defense方法是使得邻接矩阵变得可训练。 按照nettack的方法，初始化adversarial graph，然后直接训练GCN模型。通过如此简单的防御方法，攻击后目标节点被正确分类的可信度高达0.912。 上述防御有效的原因： 对边进行扰动比修改特征更有效。攻击方法倾向于添加边而不是删除边； 邻居较多的节点比邻居较少的节点更难攻击。这也与[Zügner等人，2018年]中的观察结果一致，即度越高的节点在干净图和被攻击图中的分类精度都更高。 攻击倾向于将目标节点连接到具有不同特征和标签的节点。我们发现这是最有效的攻击方式。 使用 CORA-ML数据集来验证，由于CORA-ML数据集的特征是bag of word，所以我们使用Jaccard相似度来衡量特征之间的相似性。 \(J_{u,v}=\frac{M_{11}}{M_{01}+M_{10}+M_{11}}\) $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中为1。其他类似。 下图中可以看到，Adversarial Attack显著增加了与目标节点相似度得分较低的邻居节点的数量。 图神经网络本质上是根据图形结构聚合特征。对于目标节点，恶意创建的图试图将具有不同特征和标签的节点连接起来，以污染目标节点的表示，从而使目标节点与其正确类中的节点不那么相似。 相应地，在删除边的同时，攻击倾向于删除连接与目标节点有许多相似之处的节点的边。边缘攻击更有效，因为添加或移除一条边会影响聚合过程中的所有特征维度。相反，修改一个特征只影响特征向量中的一个维度，并且这种扰动很容易被高度节点的其他邻居掩盖。 基于这些观察结果，我们提出了另一个假设，即上述防御方法之所以有效，是因为模型为连接目标节点的边赋予了较低的权重，这些边连接到与目标节点特征相似度较低的节点。为了验证这一点，我们绘制了从目标节点开始的边的末端节点的学习权重和Jaccard相似性得分(参见下图)。请注意，对于我们选择的目标节点，目标节点的每个邻居与其自身之间的Jaccard相似性得分在干净的图中大于0。相似度得分为零的边都是由攻击添加的。正如预期的那样，该模型对大部分相似度分数较低的边学习到了低权重。 为了使defense更有效，我们甚至不需要使用可学习的边权重作为defense。边权值的学习不可避免地会给模型引入额外的参数，这可能会影响模型的可扩展性和准确性。基于以下几点，一种简单的方法可能同样有效： 普通节点通常不会连接到许多与其没有相似之处的节点； 学习过程基本上是将较低的权重分配给连接两个不同节点的边。 ==我们在训练之前对给定的图进行预处理：检查图的邻接矩阵并检查边。选择连接具有低相似性分数(例如，=0)的节点的所有边作为要移除的候选。==（虽然clean graph也可能有少量这样的边，但我们发现删除这些边对目标节点的预测几乎没有什么坏处。相反，在某些情况下，删除这些边缘可能会改善预测。这是很直观的，因为聚合来自与目标截然不同的节点的特征通常会过度平滑节点表示。） 简化反而可能会导致性能提升，例如这些工作： Evaluation 作者如何评估自己的方法，实验的setup是什么样的，有没有问题或者可以借鉴的地方。 我们使用了广泛使用的CORA-ML、CITESEER和Polblog数据集。 我们将每个图分为已标记节点(20%)和未标记节点(80%)。在标记的节点中，一半用于训练，另一半用于验证。对于Polblog数据集，由于没有特征属性，我们将属性矩阵设置为单位矩阵。 Conclusion 图形神经网络(GNN)显著提高了对多种类型图形数据的分析性能。然而，与其他类型数据中的深度神经网络一样，GNN也存在健壮性问题。本文对图卷积网络(GCN)中的鲁棒性问题进行了深入研究。我们提出了一种综合的基于梯度的攻击方法，在攻击性能上优于现有的迭代和基于梯度的攻击方法。我们还分析了针对GCN的攻击，发现健壮性问题根源于GCN中的本地聚集。为了提高GCN模型的稳健性，我们给出了一种有效的防御方法。我们在基准数据上验证了我们方法的有效性和高效性。 Notes References Attack graph convolutional networks by adding fake nodes. arXiv preprint arXiv:1810.10751,2018 Adversarial attacks on neural networks for graph data. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp;amp; Data Mining, pages 2847–2856. ACM, 2018.</summary></entry><entry><title type="html">《深度学习推荐系统》笔记</title><link href="https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="《深度学习推荐系统》笔记" /><published>2021-01-24T00:00:00+08:00</published><updated>2021-01-24T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html">&lt;p&gt;@[toc]&lt;/p&gt;
+In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp;amp; Data Mining, pages 2847–2856. ACM, 2018.&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="Paper" /><category term="GCN" /><category term="Graph" /><category term="Adversary" /><summary type="html">Adversarial Examples on Graph Data: Deep Insights into Attack and Defense Huijun Wu1,2, Chen Wang2, Yuriy Tyshetskiy2, Andrew Docherty2, Kai Lu3, Liming Zhu1,2 1University of New South Wales, Australia 2Data61, CSIRO 3National University of Defense Technology, China {first, second}@data61.csiro.au, kailu@nudt.edu.cn Summary 攻击：引入积分梯度，积分梯度被用作度量来测量在图G中扰动特定特征或边的优先级。对于具有高扰动优先级的特征或边，只需将其翻转为不同的二进制值即可对其进行扰动。 防御：在训练之前对给定的图进行预处理：检查图的邻接矩阵并检查边。选择连接具有低相似性分数的节点的所有边作为要移除的候选。 Research Objective(s) ​ 在本文中，我们提出了攻击和防御两种技术。对于攻击，我们证明了通过引入积分梯度可以很容易地解决离散性问题，它可以准确地反映扰动某些特征或边缘的效果，同时仍然受益于并行计算。在防御方面，我们观察到目标攻击的恶意操纵图在统计上与正常图不同。基于这一观察结果，我们提出了一种检测图形并恢复潜在敌方扰动的防御方法。 ​ 现有的攻击方法中：添加 连接着具有不同特征的节点的边 在所有攻击方法中都起着关键作用。 ​ 本文证明了对图的邻接矩阵进行简单的预处理就能识别出被操纵的边。对于具有bag of word(BOW)特征的节点，Jaccard索引在度量连接节点之间的相似性时是有效的。通过去除连接非常不同节点的边，我们能够在不降低GCN模型的准确性的情况下防御有针对性的对抗性攻击。 Problem Statement ​ 图的深度学习模型，如图卷积网络(GCN)，在处理图数据的任务上取得了显著的性能。与其他类型的深度模型类似，图深度学习模型经常遭受敌意攻击。然而，与非图数据相比，图数据的离散特征、图的连通性以及对潜伏扰动的不同定义给图数据的对抗性攻防带来了独特的挑战和机遇。 ​ 将在非图数据上的攻击方法，用在GCN上的挑战是离散输入问题。具体地说，图形节点的特征通常是离散的。边，特别是未加权图中的边，也是离散的。为了解决这个问题，基于贪婪的方法（下面的两篇文章1和2）来攻击基于图的深度学习系统。一种反复扰乱特征或图形结构的贪婪方法。图结构和特征统计在贪婪攻击期间被保留。在本文中，我们证明了尽管存在离散输入问题，但积分梯度仍然可以精确地逼近梯度。 Method(s) ​ 攻击：现有的攻击方法中，添加 连接着具有不同特征的节点的边 在所有攻击方法中都起着关键作用。 ​ 本文证明了对图的邻接矩阵进行简单的预处理就能识别出被操纵的边。对于具有bag of word(BOW)特征的节点，Jaccard索引在度量连接节点之间的相似性时是有效的。 ​ 防御：通过去除连接非常不同节点的边，我们能够在不降低GCN模型的准确性的情况下防御有针对性的对抗性攻击。 Integrated Gradients Guided Attack： 图表中的节点特征通常是词袋类型的特征，可以是1，也可以是0。图中未加权的边也经常用来表示特定关系的存在，因此邻接矩阵中只有1或0。当攻击该模型时，敌意扰动被限制为将1改为0，或者反之亦然。在图模型中应用普通的FGSM和JSMA的主要问题是梯度不准确。 给定目标节点t，对于FGSM攻击，$\nabla J_{W^{(1)},W^{(2)}}(t)=\frac{\sigma J_{W^{(1)},W^{(2)}}(t)}{\sigma X}$ ∂X测量所有节点对损失函数值的特征重要性。这里，X是特征矩阵，它的每一行描述了图中一个节点的特征。对于节点n的特定特征i，$\nabla J_{W^{(1)},W^{(2)}}$的较大值表示扰动特征i为1，有助于使目标节点分类错误。但是，遵循此梯度可能没有用，原因有两个： 首先，特征值可能已经是1，因此我们不能再对其进行扰动； 其次，即使特征值是0，由于GCN模型可能无法学习该特征值在0和1之间的局部线性函数，所以这种扰动的结果是不可预测的。 换句话说，原始的梯度存在局部梯度问题。（以一个简单的RELU网络f(X)=relu(X)为例，当x从0增加到1时，函数值也增加了1，但在x=0时计算梯度为0，不能准确地捕捉到模型的行为。） ​ 积分梯度定义如下：考虑一条从x0到输入x的直线路径，积分梯度是通过累加路径上所有点的所有梯度来获得的。 ​ 形式上，x的第i个特征，其积分梯度Integrate Gradient（IG）如下： \(IG_i(F(X))::=(x_i-\acute{x_i}) \times \int_{\alpha=0}^{1} \frac{\partial F(x'+\alpha x(x-x'))}{\partial x_i}d\alpha\) 在给定邻接矩阵A、特征矩阵X和目标节点t的情况下，我们计算函数$F_{W^{(1)},W^{(2)}}(A,X,t)$，其中I是攻击的输入。I=A表示边缘攻击，而I=X表示特征攻击。当F为GCN模型的损失函数时，我们将这种攻击技术称为积分梯度类FGSM攻击，即IG-FGSM。 对于有目标的的IG-JSMA或IG-FGSM攻击，优化目标是最大化F的值。因此，对于值为1的特征或边，我们选择IG得分最低的特征/边，并将其扰动为0。 非目标IG-JSMA攻击旨在最小化获胜类的预测得分，以便我们尝试将IG得分高的输入维度增加到0。 为了删除边：我们要对全0矩阵逐渐增加边，来达到目前的状态，所以要把A或者X设置为全0矩阵； 为了添加边：我们要对全1矩阵逐渐删除边，来达到目前的状态，所以要把A或者X设置为全1矩阵。 算法1显示了非目标IG-JSMA攻击的伪代码。我们计算获胜类别c的预测分数的积分梯度，即A和X的条目。 然后，积分梯度被用作度量来测量在图G中扰动特定特征或边的优先级。注意，边和特征值被考虑，并且仅计算可能扰动的分数(见等式(7))。（例如，我们只计算在以前不存在边的情况下添加边的重要性。）因此，对于具有高扰动优先级的特征或边，我们只需将其翻转为不同的二进制值即可对其进行扰动。 Defense for Adversarial Attack： 由于现有的针对GCN的attack都是有效的，因为attacked graph被直接用于训练新模型。基于此，一种可行的defense方法是使得邻接矩阵变得可训练。 按照nettack的方法，初始化adversarial graph，然后直接训练GCN模型。通过如此简单的防御方法，攻击后目标节点被正确分类的可信度高达0.912。 上述防御有效的原因： 对边进行扰动比修改特征更有效。攻击方法倾向于添加边而不是删除边； 邻居较多的节点比邻居较少的节点更难攻击。这也与[Zügner等人，2018年]中的观察结果一致，即度越高的节点在干净图和被攻击图中的分类精度都更高。 攻击倾向于将目标节点连接到具有不同特征和标签的节点。我们发现这是最有效的攻击方式。 使用 CORA-ML数据集来验证，由于CORA-ML数据集的特征是bag of word，所以我们使用Jaccard相似度来衡量特征之间的相似性。 \(J_{u,v}=\frac{M_{11}}{M_{01}+M_{10}+M_{11}}\) $M_{01}$是feature number，其中特征值在节点u中为0，而在节点v中为1。其他类似。 下图中可以看到，Adversarial Attack显著增加了与目标节点相似度得分较低的邻居节点的数量。 图神经网络本质上是根据图形结构聚合特征。对于目标节点，恶意创建的图试图将具有不同特征和标签的节点连接起来，以污染目标节点的表示，从而使目标节点与其正确类中的节点不那么相似。 相应地，在删除边的同时，攻击倾向于删除连接与目标节点有许多相似之处的节点的边。边缘攻击更有效，因为添加或移除一条边会影响聚合过程中的所有特征维度。相反，修改一个特征只影响特征向量中的一个维度，并且这种扰动很容易被高度节点的其他邻居掩盖。 基于这些观察结果，我们提出了另一个假设，即上述防御方法之所以有效，是因为模型为连接目标节点的边赋予了较低的权重，这些边连接到与目标节点特征相似度较低的节点。为了验证这一点，我们绘制了从目标节点开始的边的末端节点的学习权重和Jaccard相似性得分(参见下图)。请注意，对于我们选择的目标节点，目标节点的每个邻居与其自身之间的Jaccard相似性得分在干净的图中大于0。相似度得分为零的边都是由攻击添加的。正如预期的那样，该模型对大部分相似度分数较低的边学习到了低权重。 为了使defense更有效，我们甚至不需要使用可学习的边权重作为defense。边权值的学习不可避免地会给模型引入额外的参数，这可能会影响模型的可扩展性和准确性。基于以下几点，一种简单的方法可能同样有效： 普通节点通常不会连接到许多与其没有相似之处的节点； 学习过程基本上是将较低的权重分配给连接两个不同节点的边。 ==我们在训练之前对给定的图进行预处理：检查图的邻接矩阵并检查边。选择连接具有低相似性分数(例如，=0)的节点的所有边作为要移除的候选。==（虽然clean graph也可能有少量这样的边，但我们发现删除这些边对目标节点的预测几乎没有什么坏处。相反，在某些情况下，删除这些边缘可能会改善预测。这是很直观的，因为聚合来自与目标截然不同的节点的特征通常会过度平滑节点表示。） 简化反而可能会导致性能提升，例如这些工作： Evaluation 作者如何评估自己的方法，实验的setup是什么样的，有没有问题或者可以借鉴的地方。 我们使用了广泛使用的CORA-ML、CITESEER和Polblog数据集。 我们将每个图分为已标记节点(20%)和未标记节点(80%)。在标记的节点中，一半用于训练，另一半用于验证。对于Polblog数据集，由于没有特征属性，我们将属性矩阵设置为单位矩阵。 Conclusion 图形神经网络(GNN)显著提高了对多种类型图形数据的分析性能。然而，与其他类型数据中的深度神经网络一样，GNN也存在健壮性问题。本文对图卷积网络(GCN)中的鲁棒性问题进行了深入研究。我们提出了一种综合的基于梯度的攻击方法，在攻击性能上优于现有的迭代和基于梯度的攻击方法。我们还分析了针对GCN的攻击，发现健壮性问题根源于GCN中的本地聚集。为了提高GCN模型的稳健性，我们给出了一种有效的防御方法。我们在基准数据上验证了我们方法的有效性和高效性。 Notes References Attack graph convolutional networks by adding fake nodes. arXiv preprint arXiv:1810.10751,2018 Adversarial attacks on neural networks for graph data. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp;amp; Data Mining, pages 2847–2856. ACM, 2018.</summary></entry><entry><title type="html">《深度学习推荐系统》笔记</title><link href="https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="《深度学习推荐系统》笔记" /><published>2021-01-24T00:00:00+08:00</published><updated>2021-01-24T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://duanyc.top//2021/01/24/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0.html">&lt;p&gt;[toc]&lt;/p&gt;
 
 &lt;h1 id=&quot;第一章互联网的增长引擎推荐系统&quot;&gt;第一章、互联网的增长引擎——推荐系统&lt;/h1&gt;
 
@@ -349,17 +361,75 @@ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\)&lt;/p&gt;
 
 &lt;h3 id=&quot;395-序列模型对推荐系统的启发&quot;&gt;3.9.5 序列模型对推荐系统的启发&lt;/h3&gt;
 
+&lt;p&gt;序列模型具备强大的时间序列表达能力，非常适合预估用户经过一系列行为后的下一动作。&lt;/p&gt;
+
+&lt;p&gt;工程上，序列模型有比较高的 训练复杂度，以及在线上推断过程中的串行推断，使其在模型服务过程中延迟较大 ，增大了上线难度，需要在工程上着重优化。&lt;/p&gt;
+
 &lt;h2 id=&quot;310-强化学习与推荐系统的结合&quot;&gt;3,10 强化学习与推荐系统的结合&lt;/h2&gt;
 
-&lt;h3 id=&quot;3101-深度学习强化学习推荐系统框架&quot;&gt;3.10.1 深度学习强化学习推荐系统框架&lt;/h3&gt;
+&lt;p&gt;强化学习（Reinforcement Learning）起源于机器人领域，针对智能体（Agent）在不断变化的环境（Environment）中，决策和学习的过程进行建模。在智能体学习过程中，会完成收集外部反馈（Reward），改变自身状态（State），再根据自身状态对下一步的行动（Action）进行决策，在行动之后持续收集反馈的循环。简称“行动-反馈-状态更新”的循环。&lt;/p&gt;
 
-&lt;h3 id=&quot;3102-深度强化学习推荐模型&quot;&gt;3.10.2 深度强化学习推荐模型&lt;/h3&gt;
+&lt;h3 id=&quot;3101-深度强化学习-推荐系统框架&quot;&gt;3.10.1 深度强化学习 推荐系统框架&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;智能体：推荐系统本身，包括基于DL的推荐模型，探索策略，数据存储&lt;/li&gt;
+  &lt;li&gt;环境：由新闻网站或者APP、用户组成的整个推荐系统外部环境&lt;/li&gt;
+  &lt;li&gt;行动：对一个新闻推荐系统来说，行动指的就是推荐系统进行新闻排序后推送给用户的动作&lt;/li&gt;
+  &lt;li&gt;反馈：用户收到推荐结果后，进行正向或负向的反馈。&lt;/li&gt;
+  &lt;li&gt;状态：对环境及自身当前所处具体情况的刻画。（当前已收到的所有的动作和反馈以及用户和新闻的所有相关信息的特征向量表示）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;迭代过程如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;初始化推荐系统（智能体）&lt;/li&gt;
+  &lt;li&gt;推荐系统基于当前手机的数据（状态）进行新闻排序（行动），并且推送到网站或者APP（环境）&lt;/li&gt;
+  &lt;li&gt;用户收到推荐列表，点击/忽略（反馈）某推荐结果。&lt;/li&gt;
+  &lt;li&gt;推荐系统收到反馈，更新当前状态或通过模型训练更新模型。&lt;/li&gt;
+  &lt;li&gt;重复2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;3102-深度强化学习-推荐模型&quot;&gt;3.10.2 深度强化学习 推荐模型&lt;/h3&gt;
+
+&lt;p&gt;DRN中，智能体是Deep Q-Network（深度Q网络，DQN），Q是Quality，指的是通过对行动进行质量评估，得到行动的效用得分，以此进行行动决策。&lt;/p&gt;
+
+&lt;p&gt;DQN在特征工程中，套用强化学习状态向量和行动向量的概念，将用户特征user features和环境特征context features归为状态向量，将用户-新闻特征归为行动特征。&lt;/p&gt;
 
 &lt;h3 id=&quot;3103-drn的学习过程&quot;&gt;3.10.3 DRN的学习过程&lt;/h3&gt;
 
+&lt;p&gt;DRN可以在线更新，和其他“静态”深度学习模型相比，有实时性优势。&lt;/p&gt;
+
+&lt;p&gt;按照时间顺序，DRN学习过程的重要步骤：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;离线部分，根据历史数据训练好DQN模型，作为智能体的初始化模型&lt;/li&gt;
+  &lt;li&gt;在$t_1 \rightarrow t_2$阶段，利用初始化模型进行一段时间的推送服务，积累反馈数据&lt;/li&gt;
+  &lt;li&gt;在$t_2$时间点，利用$t_1 \rightarrow t_2$阶段积累的用户点击数据，进行模型微更新（minor update）&lt;/li&gt;
+  &lt;li&gt;在$t_4$时间点，利用$t_1 \rightarrow t_4$阶段的用户点击数据及用户活跃度数据进行模型的主更新（major update）&lt;/li&gt;
+  &lt;li&gt;重复2~4步骤&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第四步可以理解为使用历史数据重新训练。第三步的模型微调联系到了DRN的在线训练算法——竞争梯度下降算法&lt;/p&gt;
+
 &lt;h3 id=&quot;3104-drn的在线学习方法竞争梯度下降算法&quot;&gt;3.10.4 DRN的在线学习方法——竞争梯度下降算法&lt;/h3&gt;
 
+&lt;p&gt;步骤：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;对于已经训练好的网络Q，对其模型参数W添加一个较小的随机扰动$\Delta W$得到新的模型参数$\widetilde W$，$\widetilde W$ 对应的网络成为探索网络$\widetilde Q$。&lt;/li&gt;
+  &lt;li&gt;对于当前网络Q和探索网络$\widetilde Q$，分别生成推荐列表L和$\widetilde L$，将这两个推荐列表合成一个推荐列表后推送给用户。&lt;/li&gt;
+  &lt;li&gt;实时收集用户的反馈，如果探索网络生成的内容由于当前网络，这用探索网络替代当前网络，进入下一轮迭代，否则保留当前网络。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第一步，由当前网络生成探索网络，产生随机扰动的公式如下：
+\(\Delta W = \alpha \cdot rand(-1,1) \cdot W\)
+$\alpha$是探索因子，决定探索力度的大小。$rand(-1,1)$是[-1,1]之间的一个随机数。&lt;/p&gt;
+
 &lt;h3 id=&quot;3105-强化学习对推荐系统的启发&quot;&gt;3.10.5 强化学习对推荐系统的启发&lt;/h3&gt;
+
+&lt;p&gt;变静态为动态，把模型学习的实时性变得很重要。&lt;/p&gt;
+
+&lt;p&gt;Question：重量级&amp;amp;完美&amp;amp;延迟大 v.s. 轻巧&amp;amp;简单&amp;amp;实时训练&lt;/p&gt;
 
 &lt;h1 id=&quot;第四章embedding技术在推荐系统中的应用&quot;&gt;第四章、Embedding技术在推荐系统中的应用&lt;/h1&gt;
 
@@ -381,9 +451,11 @@ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\)&lt;/p&gt;
 
 &lt;h3 id=&quot;413-embedding技术对于深度学习推荐系统的重要性&quot;&gt;4.1.3 Embedding技术对于深度学习推荐系统的重要性&lt;/h3&gt;
 
- 	1. 推荐场景中大量使用one-hot对类别，id型特征进行编码，导致样本特征向量稀疏，不利于深度学习处理，所以需要由Embedding层负责将高维稀疏特征向量转换成低维稠密特征向量。
- 	2. Embedding本身就是重要的特征向量，表达能力更强。
- 	3. Embedding对物品、用户相似度的计算是常用的推荐系统召回层技术。适用于对海量备选物品进行快速初筛。
+&lt;ol&gt;
+  &lt;li&gt;推荐场景中大量使用one-hot对类别，id型特征进行编码，导致样本特征向量稀疏，不利于深度学习处理，所以需要由Embedding层负责将高维稀疏特征向量转换成低维稠密特征向量。&lt;/li&gt;
+  &lt;li&gt;Embedding本身就是重要的特征向量，表达能力更强。&lt;/li&gt;
+  &lt;li&gt;Embedding对物品、用户相似度的计算是常用的推荐系统召回层技术。适用于对海量备选物品进行快速初筛。&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;42-word2vec经典的embedding方法&quot;&gt;4.2 Word2vec——经典的Embedding方法&lt;/h2&gt;
 
@@ -398,32 +470,13 @@ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\)&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;训练样本：选取一个长度为2c+1的滑动窗口，从语料库中抽取一个句子，将滑动窗口由左至右滑动，每移动一次，窗口中的词组就组成了一个训练样本。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;优化目标：每个词$w_t$都决定了相邻的词$w_{t+j}$，基于极大似然估计的方法，希望所有样本的条件概率$p(w_{t+j}&lt;/td&gt;
-          &lt;td&gt;w_t)$之积最大，这里使用对数概率，Word2vec的目标函数如下：&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
+  &lt;li&gt;优化目标：每个词$w_t$都决定了相邻的词$w_{t+j}$，基于极大似然估计的方法，希望所有样本的条件概率$p(w_{t+j}|w_t)$之积最大，这里使用对数概率，Word2vec的目标函数如下：&lt;/li&gt;
 &lt;/ul&gt;
 
 \[\frac{1}{T} \sum_{t=1}^{T} \sum_{-c\leq j\leq c,j \neq 0} log p(w_{t+j}|w_t)\]
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;$p(w_{t+j}&lt;/td&gt;
-          &lt;td&gt;w_t)$如何定义：多分类问题，最直接的是使用Softmax函数。$p(w_{t+j}&lt;/td&gt;
-          &lt;td&gt;w_t)$定义如下：&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
+  &lt;li&gt;$p(w_{t+j}|w_t)$如何定义：多分类问题，最直接的是使用Softmax函数。$p(w_{t+j}|w_t)$定义如下：&lt;/li&gt;
 &lt;/ul&gt;
 
 \[p(W_O|W_I)=\frac{exp(V'_{W_O}{\mathsf{T}} V_{W_I})}{\sum_{w=1}^{W}exp(V'_{W}{\mathsf{T}} V_{W_I})}\]
@@ -436,15 +489,106 @@ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\)&lt;/p&gt;
 
 &lt;h3 id=&quot;423-word2vec的负采样训练方法&quot;&gt;4.2.3 Word2vec的“负采样”训练方法&lt;/h3&gt;
 
+&lt;p&gt;原始的Word2vec计算量过大，往往采用负采样的方法进行训练，只需要对采样出的几个负样本计算预测误差。Word2vec模型的优化目标从一个读哟分类问题退化成了一个近似二分类问题，式子如下：
+\(E = -log \sigma (v'_{w_o}{\mathrm{T}} h - \sum_{W_j \in W_{neg}}log \sigma(-v'_{w_j}{\mathrm{T}} h))\)
+$v’&lt;em&gt;{w_o}$是输出词向量（正样本），h是隐层向量，$W&lt;/em&gt;{neg}$是负样本集合，$v’_{w_j}$是负样本词向量。福特样本集合的大小很有限，通常小于10。&lt;/p&gt;
+
 &lt;h3 id=&quot;424-word2vec对embedding技术的奠基性意义&quot;&gt;4.2.4 Word2vec对Embedding技术的奠基性意义&lt;/h3&gt;
 
 &lt;h2 id=&quot;43-item2vecword2vec在推荐系统领域的推广&quot;&gt;4.3 Item2vec——Word2vec在推荐系统领域的推广&lt;/h2&gt;
 
+&lt;h3 id=&quot;431-item2vec的基本原理&quot;&gt;4.3.1 Item2vec的基本原理&lt;/h3&gt;
+
+&lt;p&gt;由于Word2vec的流行，越来越多的Embedding方法可以被直接用于&lt;strong&gt;物品Embedding向量&lt;/strong&gt;的生成。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;用户Embedding向量&lt;/strong&gt;这可以通过行为历史中的物品Embedding平均或者聚类得到。&lt;/p&gt;
+
+&lt;p&gt;利用用户向量和物品向量的相似性，可以直接在推荐系统的召回层快速得到候选集合，或在排序层直接用于最终推荐列表的排序。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Word2vec利用词序列生成词Embedding。&lt;/p&gt;
+
+    &lt;p&gt;Item2vec利用的物品序列是由特定用户浏览、购买等行为产生的历史行为记录序列。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Word2vec中一个长度为T的句子为$w_1,w_2,…,w_T$，则其优化目标如公式7所示
+假设Item2vec中一个长度为K的用户历史记录为$w_1,w_2,…,w_K$，类比前者，优化目标如下所示：
+\(\frac{1}{K} \sum_{t=1}^{K} \sum_{j \neq i} log p(w_{j}|w_i)\)
+通过观察两个公式可以看到不同在于，Item2vec丢弃了时间窗口的概念，认为序列中任意两个物品都相关，所以在公式中，是两两物品的对数概率的和，而不仅仅是时间窗口内物品的对数概率之和。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;优化目标定义好后，其余的训练过程和最终物品Embedding的产生过程，Item2vec与Word2vec完全一致。最终物品向量的查找表就是词向量的查找表。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;432-广义的item2vec&quot;&gt;4.3.2 “广义”的Item2vec&lt;/h3&gt;
+
+&lt;p&gt;广义上讲，任何可以生成物品向量的方法都可以称作Item2vec，eg双塔模型。&lt;/p&gt;
+
+&lt;p&gt;广告侧的模型是对物品进行Embedding，称作“物品塔”，本质是接受物品相关的特征向量。最后输出一个多维的稠密向量&lt;/p&gt;
+
+&lt;h3 id=&quot;433-item2vec方法的特点和局限性&quot;&gt;4.3.3 Item2vec方法的特点和局限性&lt;/h3&gt;
+
+&lt;p&gt;优点：作为Word2vec的推广，理论上可以使用任何序列型数据生成物品的 Embedding向量，大大拓展了Word2vec的使用场景&lt;/p&gt;
+
+&lt;p&gt;局限性：只能利用序列型数据，无法处理网络化数据——&amp;gt;Graph Embedding技术出现&lt;/p&gt;
+
 &lt;h2 id=&quot;44-graph-embedding引入更多结构信息和图嵌入技术&quot;&gt;4.4 Graph Embedding——引入更多结构信息和图嵌入技术&lt;/h2&gt;
+
+&lt;p&gt;Graph Embedding是一种对图结构中的节点进行Embedding编码的方法。&lt;strong&gt;最终生成的节点Embedding向量包含图的结构信息及附近节点的局部相似性信息。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;441-deepwalk基础的graph-embedding方法&quot;&gt;4.4.1 DeepWalk——基础的Graph Embedding方法&lt;/h3&gt;
+
+&lt;p&gt;主要思想：在由物品组成的图结构上进行随机游走，产生大量物品序列，然后将这些物品序列作为训练样本输入Word2vec进行训练，得到物品的Embedding。&lt;strong&gt;是链接序列Embedding和Graph Embedding的过渡方法。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DeepWalk算法流程：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;原始用户行为序列&lt;/li&gt;
+  &lt;li&gt;基于用户行为序列，构建物品关系图。如果后续产生多条相同的有向边，则有向边的权重加强。将所有用户行为序列都转换为物品关系图中的边之后，全局的物品关系图就建立起来了&lt;/li&gt;
+  &lt;li&gt;采用随机游走的方式，随机选择起始点，重新产生物品序列。&lt;/li&gt;
+  &lt;li&gt;将这些物品序列输入Word2vec模型中，生成最终的物品Embedding向量。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;随机游走的跳转概率（到达节点$v_i$后，下一步遍历$v_i$的邻接点$v_j$的概率）:&lt;/p&gt;
+
+&lt;p&gt;​	若物品关系图是有向有权图，从节点$v_i$跳转到$v_j$的概率为：
+\(P(v_j|v_i)= 
+\left\{  
+		\begin{array}{cc}  
+		\frac{M_{ij}}{\sum_{j\in N_+(v_i)}M_{ij}}, &amp;amp; v_j \in N_+(v_i) \\
+		0, &amp;amp; e_{ij} \notin \varepsilon
+		\end{array}  
+\right.\)&lt;/p&gt;
+
+&lt;p&gt;$\varepsilon$是物品关系图中所有边的集合，$ N_+(v_i)$是节点$v_i$所有的出边集合，$M_{ij}$是节点$v_i$到$v_j$边的权重。&lt;strong&gt;==即，DeepWalk的跳转概率是跳转边的权重站所有相关出边的权重之和的比例==&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;若物品关系图是无向无权图，则$M_{ij}$为1，且$ N_+(v_i)$是节点$v_i$的所有边的集合。&lt;/p&gt;
+
+&lt;h3 id=&quot;442-node2vec同质性和结构性的权衡&quot;&gt;4.4.2 Node2vec——同质性和结构性的权衡&lt;/h3&gt;
+
+&lt;h3 id=&quot;443-eges阿里巴巴的综合性graph-embedding方法&quot;&gt;4.4.3 EGES——阿里巴巴的综合性Graph Embedding方法&lt;/h3&gt;
+
+&lt;p&gt;###&lt;/p&gt;
 
 &lt;h2 id=&quot;45-embedding与深度学习推荐系统的结合&quot;&gt;4.5 Embedding与深度学习推荐系统的结合&lt;/h2&gt;
 
+&lt;h3 id=&quot;451-深度学习网络中的embedding层&quot;&gt;4.5.1 深度学习网络中的Embedding层&lt;/h3&gt;
+
+&lt;h3 id=&quot;452-embedding的预训练方法&quot;&gt;4.5.2 Embedding的预训练方法&lt;/h3&gt;
+
+&lt;h3 id=&quot;453-embedding作为推荐系统召回层的方法&quot;&gt;4.5.3 Embedding作为推荐系统召回层的方法&lt;/h3&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
 &lt;h2 id=&quot;46-局部敏感哈希让embedding插上翅膀的快速搜索方法&quot;&gt;4.6 局部敏感哈希——让Embedding插上翅膀的快速搜索方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;461-快速embedding最近邻搜索&quot;&gt;4.6.1 “快速”Embedding最近邻搜索&lt;/h3&gt;
+
+&lt;h3 id=&quot;462-局部敏感哈希的基本原理&quot;&gt;4.6.2 局部敏感哈希的基本原理&lt;/h3&gt;
+
+&lt;h3 id=&quot;463-局部敏感哈希多桶策略&quot;&gt;4.6.3 局部敏感哈希多桶策略&lt;/h3&gt;
 
 &lt;h1 id=&quot;第五章多角度审视推荐系统&quot;&gt;第五章、多角度审视推荐系统&lt;/h1&gt;
 
@@ -454,7 +598,11 @@ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\)&lt;/p&gt;
 
 &lt;h1 id=&quot;第八章深度学习推荐系统的前沿实践&quot;&gt;第八章、深度学习推荐系统的前沿实践&lt;/h1&gt;
 
-&lt;h1 id=&quot;第九章构建属于你自己的推荐系统知识框架&quot;&gt;第九章、构建属于你自己的推荐系统知识框架&lt;/h1&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="DL" /><category term="RS" /><summary type="html">@[toc] 第一章、互联网的增长引擎——推荐系统 第二章、前深度学习时代——推荐系统的进化之路 第三章、浪潮之巅——深度学习在推荐系统中的应用 3.1 深度学习推荐模型的演化关系图 3.2 AutoRec——单隐层神经网络推荐模型 3.3 Deep Crossing模型——经典的深度学习架构 3.4 NeuralCF模型——CF与深度学习的结合 3.5 PNN模型——加强特征交叉能力 3.6 Wide&amp;amp;Deep模型——记忆能力和泛化能力的综合 3.7 FM与深度学习模型的结合 3.7.1 FNN——用FM的隐向量完成Embedding层初始化 ​ 神经网络的参数初始化通常采用不包含任何先验信息的随机初始化，而Embedding层的输入极端稀疏化，导致Embedding层收敛缓慢，且Embedding层参数量占绝大部分，进而导致模型收敛受限于Embedding层。 ​ FNN模型解决上述问题的思路：使用FM模型训练好的各特征隐向量初始化Embedding层的参数（引入先验信息）书p79：图3-8及下面第一段话 ​ FNN模型也为Embedding预训练提供了借鉴思路。 ​ 3.7.2 DeepFM——用FM代替Wide部分 ​ FNN把FM的训练结果作为初始化权重，并未对神经网络的结构进行更改。 ​ DeepFM对Wide&amp;amp;Deep的改进在于：用FM替换了Wide部分，加强了浅层网络部分特征组合的能力。书p80：图3-9及下面第一段话 ​ 针对Wide&amp;amp;Deep的改进动机，DeepFM和Deep&amp;amp;Cross完全一样，只不过进行特征组合的方法不一样，前者使用FM，后者使用多层Cross网络。 3.7.3 NFM——FM的神经网络化尝试 ​ 在数学形式上，NFM模型的主要思路是用一个表达能力更强的函数代替FM中的二阶隐向量内积的部分 \(\hat{y}_{FM}(x) = w_0+\sum_{i=1}^N{w_ix_i}+\sum_{i=1}^N\sum_{j=i+1}^N{v_i^tv_j\cdot x_ix_j}\) \[\hat{y}_{NFM}(x)=w_0+\sum_{i=1}^{N}w_ix_i+f(x)\] ​ $f(x)$的构造工作可以交由某个深度学习网络来完成，并且通过BP来学习。 ​ NFM的这个神经网络架构特点：在Embedding层和多层神经网络之间加入特征交叉池化层。 ​ 若把NFM的一阶部分看作一个线性模型，则NFM架构也可以视为Wide&amp;amp;Deep模型的进化。NFM模型对Wide&amp;amp;Deep模型的Deep部分加入了特征交叉池化层，加强了特征交叉。 3.7.4 基于FM的深度学习模型的优点和局限性 ​ FNN、DeepFM、NFM都是在经典的多层神经网络的基础上加入有针对性的特征交叉操作，使模型具有更强的非线性表达能力。 ​ 特征工程的思路已经穷尽了可能的尝试，提升空间很小。 3.8 注意力机制在推荐模型中的应用 3.8.1 AFM——引入注意力机制的FM ​ 注意力机制，基于假设——“不同的交叉特征”对于结果的影响程度不同。AFM模型引入注意力机制是通过在特征交叉层和最终的输出层之间加入注意力网络实现的。注意力网络的作用是为每一个交叉特征提供权重（注意力得分） ​ 为了防止交叉特征数据稀疏带来权重参数难以收敛的问题，AFM使用了一个粥两两特征交叉层和池化层之间的注意力网络来生成注意力得分。 3.8.2 DIN——引入注意力机制的深度学习网络 ​ 应用场景：阿里巴巴电商广告推荐。 ​ 计算一个用户u是否点击广告a时，模型的输入特征分为两类： 用户u的特征组。用户特征组里的商品id/商铺id序列，表示用户点击过的商品/商铺集合。 候选广告a的特征组。广告特征里的商品id和商铺id代表：广告对应的商品id和商铺id。 利用候选商品和历史性为商品之间的相关性计算出一个权重，该权重就代表了“注意力”的强弱。注意力权重+深度学习网络=DIN模型，注意力形式化表达如下： \(V_u = f(V_a)=\sum_{i=1}^{N}{w_i \cdot V_i}=\sum_{i=1}^{N}{g(V_i, V_a)} \cdot V_i\) $V_i$是用户的Embedding向量。$V_a$是候选广告商品的Embedding向量。$V_i$是用户u的第i次行为的Embedding向量。 用户的行为就是浏览商品和店铺，因此行为的Embedding向量就是那次浏览商品或者店铺的Embedding向量。 $g(V_i,V_a)$使用一个激活单元activation unit来生成注意力得分，输入层是两个Embedding向量，经过元素减操作后，与原Embedding向量一同连接后形成全链接层的输入，最后通过单神经元输出层生成注意力得分。 3.8.3 注意力机制对推荐系统的启发 ​ 注意力机制在数学形式上，只是将过去的平均操作或加和操作 换成了 加权求和或加权平均操作。 3.9 DIEN——序列模型与推荐系统的结合 3.9.1 DIEN的“进化”动机 ​ 序列信息的重要性在于： 它加强了最近行为对下次行为预测的影响。 序列模型可以学习到购买趋势的信息。 3.9.2 DIEN模型的架构 ​ ”兴趣进化网络“被认为是一种用户兴趣的Embedding方法，最终删除是$h’(T)$这个用户兴趣向量，DIEN模型创新点在于如何构建”兴趣进化网络“。 ​ 兴趣进化网络分为三层，从下至上依次是： 行为序列层：主要作用是把原始的id类行为序列转换成Embedding行为序列。 兴趣抽取层：主要作用是通过模拟用户兴趣迁移过程，抽取用户兴趣。 兴趣进化层：主要作用是在兴趣抽取层基础上加入注意力机制，模拟与当前目标广告相关的兴趣进化过程。 3.9.3 兴趣抽取层的结构 ​ 兴趣抽取层的基本结构是GRU网络。相比于传统的序列模型RNN和LSTM，GRU解决了RNN的梯度消失问题。GRU参数更少，收敛速度更快，所以被DIEN序列模型的选择。 ​ 经过由GRU组成的兴趣抽取层后，用户的行为向量$b(t)$被进一步抽象化，形成了兴趣状态向量$h(t)$。 \(u_t = \sigma(W^u i_t + U^uh_{t-1} + b^u) \\ r_t = \sigma(W^r i_t + U^rh_{t-1} + b^r) \\ \widetilde h_t = tanh(W^hi_t + r_t \circ U^h h_{t-1} + b^h) \\ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\) 3.9.4 兴趣进化层的结构 ​ DIEN兴趣进化层相比兴趣抽取层最大的特点是加入了注意力机制（与DIN一样）。兴趣进化层注意力得分的生成过程与DIN完全一致，都是当前状态向量与目标广告向量进行相互作用的结果。即，DIEN在模拟兴趣进化的过程中，需要考虑与目标广告的相关性。 ​ 在兴趣抽取层智商加上了兴趣净化层就是为了更有针对性地模拟与目标广告相关的兴趣进化路径。 ​ 兴趣进化层完成注意力机制的引入是通过AUGRU（GRU with Attentional Update gate，基于注意力更新门的GRU）结构，AUGRU在原GRU的更新门的结构上加入了注意力得分$a_t$。 \(\widetilde u_t' = a_t \cdot u_t'\\ h_t'= (1- \widetilde u_t') \circ h_{t-1}' + \widetilde u_t' \circ \widetilde h_t'\) 3.9.5 序列模型对推荐系统的启发 3,10 强化学习与推荐系统的结合 3.10.1 深度学习强化学习推荐系统框架 3.10.2 深度强化学习推荐模型 3.10.3 DRN的学习过程 3.10.4 DRN的在线学习方法——竞争梯度下降算法 3.10.5 强化学习对推荐系统的启发 第四章、Embedding技术在推荐系统中的应用 ​ Embedding中文直译：嵌入，向量化，向量映射。 ​ Embedding的主要作用：将稀疏向量转换成稠密向量，便于上层深度神经网络处理。 4.1 什么是Embedding ​ 形式上，Embeding是用一个低位稠密的向量“表示”一个对象object，即Embedding向量能够表达相应对象的某些特征，同时向量之间的距离反映了对象之间的相似性。 4.1.1 词向量的例子 ​ Embedding向量之间的运算甚至能够包含词之间的语义关系信息。在有大量语料输入的前提下，Embedding技术甚至可以挖掘出一些通用知识。 4.1.2 Embedding技术在其他领域的扩展 ​ 与词向量使用大量文本语料进行训练不同，不同领域的训练样本肯定不同，如视频推荐使用用户的观看序列进行电影的Embedding化，而电商平台使用用户的购买历史作为训练样本。 4.1.3 Embedding技术对于深度学习推荐系统的重要性 1. 推荐场景中大量使用one-hot对类别，id型特征进行编码，导致样本特征向量稀疏，不利于深度学习处理，所以需要由Embedding层负责将高维稀疏特征向量转换成低维稠密特征向量。 2. Embedding本身就是重要的特征向量，表达能力更强。 3. Embedding对物品、用户相似度的计算是常用的推荐系统召回层技术。适用于对海量备选物品进行快速初筛。 4.2 Word2vec——经典的Embedding方法 4.2.1 什么是Word2vec ​ word to vector，是一个生成对“词”的向量表达的模型。 ​ 假设由一组句子组成的语料库，其中的一个长度为$T$的句子为$w_1, w_2,\cdots,w_T$，假定每个词都跟其最相邻的词的关系最密切，每个词都是由相邻的词决定的（CBOW），或者每个词都决定了相邻的词（skip-gram）。 ​ CBOW模型的输入是$w_T$周围的词，预测的输出是$w_t$，而Skip-gram则相反。 4.2.2 Word2vec模型的训练过程 训练样本：选取一个长度为2c+1的滑动窗口，从语料库中抽取一个句子，将滑动窗口由左至右滑动，每移动一次，窗口中的词组就组成了一个训练样本。 优化目标：每个词$w_t$都决定了相邻的词$w_{t+j}$，基于极大似然估计的方法，希望所有样本的条件概率$p(w_{t+j} w_t)$之积最大，这里使用对数概率，Word2vec的目标函数如下： \[\frac{1}{T} \sum_{t=1}^{T} \sum_{-c\leq j\leq c,j \neq 0} log p(w_{t+j}|w_t)\] $p(w_{t+j} w_t)$如何定义：多分类问题，最直接的是使用Softmax函数。$p(w_{t+j} w_t)$定义如下： \[p(W_O|W_I)=\frac{exp(V'_{W_O}{\mathsf{T}} V_{W_I})}{\sum_{w=1}^{W}exp(V'_{W}{\mathsf{T}} V_{W_I})}\] $w_O$代表$w_{t+j}$，被称为输出词，$w_I$代表$w_t$，被称为输入词。 输入向量表达是输入层到隐层的权重矩阵$W_{V \times N}$，而输出向量表达是隐层到输出层的权重矩阵$W’_{N\times V}$。 ​ 在获得输入向量矩阵$W_{V \times N}$后，每一行对应的权重向量就是“词向量”。 4.2.3 Word2vec的“负采样”训练方法 4.2.4 Word2vec对Embedding技术的奠基性意义 4.3 Item2vec——Word2vec在推荐系统领域的推广 4.4 Graph Embedding——引入更多结构信息和图嵌入技术 4.5 Embedding与深度学习推荐系统的结合 4.6 局部敏感哈希——让Embedding插上翅膀的快速搜索方法 第五章、多角度审视推荐系统 第六章、深度学习推荐系统的工程实现 第七章、推荐系统的评估 第八章、深度学习推荐系统的前沿实践 第九章、构建属于你自己的推荐系统知识框架</summary></entry><entry><title type="html">template</title><link href="https://duanyc.top//2021/01/23/template.html" rel="alternate" type="text/html" title="template" /><published>2021-01-23T00:00:00+08:00</published><updated>2021-01-23T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/23/template</id><content type="html" xml:base="https://duanyc.top//2021/01/23/template.html">&lt;p&gt;This is an article template.&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="template" /><summary type="html">This is an article template.</summary></entry><entry><title type="html">Welcome</title><link href="https://duanyc.top//2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://duanyc.top//2018/07/01/welcome</id><content type="html" xml:base="https://duanyc.top//2018/07/01/welcome.html">&lt;p&gt;If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:&lt;/p&gt;
+&lt;h1 id=&quot;第九章构建属于你自己的推荐系统知识框架&quot;&gt;第九章、构建属于你自己的推荐系统知识框架&lt;/h1&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="DL" /><category term="RS" /><summary type="html">[toc] 第一章、互联网的增长引擎——推荐系统 第二章、前深度学习时代——推荐系统的进化之路 第三章、浪潮之巅——深度学习在推荐系统中的应用 3.1 深度学习推荐模型的演化关系图 3.2 AutoRec——单隐层神经网络推荐模型 3.3 Deep Crossing模型——经典的深度学习架构 3.4 NeuralCF模型——CF与深度学习的结合 3.5 PNN模型——加强特征交叉能力 3.6 Wide&amp;amp;Deep模型——记忆能力和泛化能力的综合 3.7 FM与深度学习模型的结合 3.7.1 FNN——用FM的隐向量完成Embedding层初始化 ​ 神经网络的参数初始化通常采用不包含任何先验信息的随机初始化，而Embedding层的输入极端稀疏化，导致Embedding层收敛缓慢，且Embedding层参数量占绝大部分，进而导致模型收敛受限于Embedding层。 ​ FNN模型解决上述问题的思路：使用FM模型训练好的各特征隐向量初始化Embedding层的参数（引入先验信息）书p79：图3-8及下面第一段话 ​ FNN模型也为Embedding预训练提供了借鉴思路。 ​ 3.7.2 DeepFM——用FM代替Wide部分 ​ FNN把FM的训练结果作为初始化权重，并未对神经网络的结构进行更改。 ​ DeepFM对Wide&amp;amp;Deep的改进在于：用FM替换了Wide部分，加强了浅层网络部分特征组合的能力。书p80：图3-9及下面第一段话 ​ 针对Wide&amp;amp;Deep的改进动机，DeepFM和Deep&amp;amp;Cross完全一样，只不过进行特征组合的方法不一样，前者使用FM，后者使用多层Cross网络。 3.7.3 NFM——FM的神经网络化尝试 ​ 在数学形式上，NFM模型的主要思路是用一个表达能力更强的函数代替FM中的二阶隐向量内积的部分 \(\hat{y}_{FM}(x) = w_0+\sum_{i=1}^N{w_ix_i}+\sum_{i=1}^N\sum_{j=i+1}^N{v_i^tv_j\cdot x_ix_j}\) \[\hat{y}_{NFM}(x)=w_0+\sum_{i=1}^{N}w_ix_i+f(x)\] ​ $f(x)$的构造工作可以交由某个深度学习网络来完成，并且通过BP来学习。 ​ NFM的这个神经网络架构特点：在Embedding层和多层神经网络之间加入特征交叉池化层。 ​ 若把NFM的一阶部分看作一个线性模型，则NFM架构也可以视为Wide&amp;amp;Deep模型的进化。NFM模型对Wide&amp;amp;Deep模型的Deep部分加入了特征交叉池化层，加强了特征交叉。 3.7.4 基于FM的深度学习模型的优点和局限性 ​ FNN、DeepFM、NFM都是在经典的多层神经网络的基础上加入有针对性的特征交叉操作，使模型具有更强的非线性表达能力。 ​ 特征工程的思路已经穷尽了可能的尝试，提升空间很小。 3.8 注意力机制在推荐模型中的应用 3.8.1 AFM——引入注意力机制的FM ​ 注意力机制，基于假设——“不同的交叉特征”对于结果的影响程度不同。AFM模型引入注意力机制是通过在特征交叉层和最终的输出层之间加入注意力网络实现的。注意力网络的作用是为每一个交叉特征提供权重（注意力得分） ​ 为了防止交叉特征数据稀疏带来权重参数难以收敛的问题，AFM使用了一个粥两两特征交叉层和池化层之间的注意力网络来生成注意力得分。 3.8.2 DIN——引入注意力机制的深度学习网络 ​ 应用场景：阿里巴巴电商广告推荐。 ​ 计算一个用户u是否点击广告a时，模型的输入特征分为两类： 用户u的特征组。用户特征组里的商品id/商铺id序列，表示用户点击过的商品/商铺集合。 候选广告a的特征组。广告特征里的商品id和商铺id代表：广告对应的商品id和商铺id。 利用候选商品和历史性为商品之间的相关性计算出一个权重，该权重就代表了“注意力”的强弱。注意力权重+深度学习网络=DIN模型，注意力形式化表达如下： \(V_u = f(V_a)=\sum_{i=1}^{N}{w_i \cdot V_i}=\sum_{i=1}^{N}{g(V_i, V_a)} \cdot V_i\) $V_i$是用户的Embedding向量。$V_a$是候选广告商品的Embedding向量。$V_i$是用户u的第i次行为的Embedding向量。 用户的行为就是浏览商品和店铺，因此行为的Embedding向量就是那次浏览商品或者店铺的Embedding向量。 $g(V_i,V_a)$使用一个激活单元activation unit来生成注意力得分，输入层是两个Embedding向量，经过元素减操作后，与原Embedding向量一同连接后形成全链接层的输入，最后通过单神经元输出层生成注意力得分。 3.8.3 注意力机制对推荐系统的启发 ​ 注意力机制在数学形式上，只是将过去的平均操作或加和操作 换成了 加权求和或加权平均操作。 3.9 DIEN——序列模型与推荐系统的结合 3.9.1 DIEN的“进化”动机 ​ 序列信息的重要性在于： 它加强了最近行为对下次行为预测的影响。 序列模型可以学习到购买趋势的信息。 3.9.2 DIEN模型的架构 ​ ”兴趣进化网络“被认为是一种用户兴趣的Embedding方法，最终删除是$h’(T)$这个用户兴趣向量，DIEN模型创新点在于如何构建”兴趣进化网络“。 ​ 兴趣进化网络分为三层，从下至上依次是： 行为序列层：主要作用是把原始的id类行为序列转换成Embedding行为序列。 兴趣抽取层：主要作用是通过模拟用户兴趣迁移过程，抽取用户兴趣。 兴趣进化层：主要作用是在兴趣抽取层基础上加入注意力机制，模拟与当前目标广告相关的兴趣进化过程。 3.9.3 兴趣抽取层的结构 ​ 兴趣抽取层的基本结构是GRU网络。相比于传统的序列模型RNN和LSTM，GRU解决了RNN的梯度消失问题。GRU参数更少，收敛速度更快，所以被DIEN序列模型的选择。 ​ 经过由GRU组成的兴趣抽取层后，用户的行为向量$b(t)$被进一步抽象化，形成了兴趣状态向量$h(t)$。 \(u_t = \sigma(W^u i_t + U^uh_{t-1} + b^u) \\ r_t = \sigma(W^r i_t + U^rh_{t-1} + b^r) \\ \widetilde h_t = tanh(W^hi_t + r_t \circ U^h h_{t-1} + b^h) \\ h_t = (1-u_t) \circ h_{t-1} + u_t \circ \widetilde h_t\) 3.9.4 兴趣进化层的结构 ​ DIEN兴趣进化层相比兴趣抽取层最大的特点是加入了注意力机制（与DIN一样）。兴趣进化层注意力得分的生成过程与DIN完全一致，都是当前状态向量与目标广告向量进行相互作用的结果。即，DIEN在模拟兴趣进化的过程中，需要考虑与目标广告的相关性。 ​ 在兴趣抽取层智商加上了兴趣净化层就是为了更有针对性地模拟与目标广告相关的兴趣进化路径。 ​ 兴趣进化层完成注意力机制的引入是通过AUGRU（GRU with Attentional Update gate，基于注意力更新门的GRU）结构，AUGRU在原GRU的更新门的结构上加入了注意力得分$a_t$。 \(\widetilde u_t' = a_t \cdot u_t'\\ h_t'= (1- \widetilde u_t') \circ h_{t-1}' + \widetilde u_t' \circ \widetilde h_t'\) 3.9.5 序列模型对推荐系统的启发 序列模型具备强大的时间序列表达能力，非常适合预估用户经过一系列行为后的下一动作。 工程上，序列模型有比较高的 训练复杂度，以及在线上推断过程中的串行推断，使其在模型服务过程中延迟较大 ，增大了上线难度，需要在工程上着重优化。 3,10 强化学习与推荐系统的结合 强化学习（Reinforcement Learning）起源于机器人领域，针对智能体（Agent）在不断变化的环境（Environment）中，决策和学习的过程进行建模。在智能体学习过程中，会完成收集外部反馈（Reward），改变自身状态（State），再根据自身状态对下一步的行动（Action）进行决策，在行动之后持续收集反馈的循环。简称“行动-反馈-状态更新”的循环。 3.10.1 深度强化学习 推荐系统框架 智能体：推荐系统本身，包括基于DL的推荐模型，探索策略，数据存储 环境：由新闻网站或者APP、用户组成的整个推荐系统外部环境 行动：对一个新闻推荐系统来说，行动指的就是推荐系统进行新闻排序后推送给用户的动作 反馈：用户收到推荐结果后，进行正向或负向的反馈。 状态：对环境及自身当前所处具体情况的刻画。（当前已收到的所有的动作和反馈以及用户和新闻的所有相关信息的特征向量表示） 迭代过程如下： 初始化推荐系统（智能体） 推荐系统基于当前手机的数据（状态）进行新闻排序（行动），并且推送到网站或者APP（环境） 用户收到推荐列表，点击/忽略（反馈）某推荐结果。 推荐系统收到反馈，更新当前状态或通过模型训练更新模型。 重复2 3.10.2 深度强化学习 推荐模型 DRN中，智能体是Deep Q-Network（深度Q网络，DQN），Q是Quality，指的是通过对行动进行质量评估，得到行动的效用得分，以此进行行动决策。 DQN在特征工程中，套用强化学习状态向量和行动向量的概念，将用户特征user features和环境特征context features归为状态向量，将用户-新闻特征归为行动特征。 3.10.3 DRN的学习过程 DRN可以在线更新，和其他“静态”深度学习模型相比，有实时性优势。 按照时间顺序，DRN学习过程的重要步骤： 离线部分，根据历史数据训练好DQN模型，作为智能体的初始化模型 在$t_1 \rightarrow t_2$阶段，利用初始化模型进行一段时间的推送服务，积累反馈数据 在$t_2$时间点，利用$t_1 \rightarrow t_2$阶段积累的用户点击数据，进行模型微更新（minor update） 在$t_4$时间点，利用$t_1 \rightarrow t_4$阶段的用户点击数据及用户活跃度数据进行模型的主更新（major update） 重复2~4步骤 第四步可以理解为使用历史数据重新训练。第三步的模型微调联系到了DRN的在线训练算法——竞争梯度下降算法 3.10.4 DRN的在线学习方法——竞争梯度下降算法 步骤： 对于已经训练好的网络Q，对其模型参数W添加一个较小的随机扰动$\Delta W$得到新的模型参数$\widetilde W$，$\widetilde W$ 对应的网络成为探索网络$\widetilde Q$。 对于当前网络Q和探索网络$\widetilde Q$，分别生成推荐列表L和$\widetilde L$，将这两个推荐列表合成一个推荐列表后推送给用户。 实时收集用户的反馈，如果探索网络生成的内容由于当前网络，这用探索网络替代当前网络，进入下一轮迭代，否则保留当前网络。 第一步，由当前网络生成探索网络，产生随机扰动的公式如下： \(\Delta W = \alpha \cdot rand(-1,1) \cdot W\) $\alpha$是探索因子，决定探索力度的大小。$rand(-1,1)$是[-1,1]之间的一个随机数。 3.10.5 强化学习对推荐系统的启发 变静态为动态，把模型学习的实时性变得很重要。 Question：重量级&amp;amp;完美&amp;amp;延迟大 v.s. 轻巧&amp;amp;简单&amp;amp;实时训练 第四章、Embedding技术在推荐系统中的应用 ​ Embedding中文直译：嵌入，向量化，向量映射。 ​ Embedding的主要作用：将稀疏向量转换成稠密向量，便于上层深度神经网络处理。 4.1 什么是Embedding ​ 形式上，Embeding是用一个低位稠密的向量“表示”一个对象object，即Embedding向量能够表达相应对象的某些特征，同时向量之间的距离反映了对象之间的相似性。 4.1.1 词向量的例子 ​ Embedding向量之间的运算甚至能够包含词之间的语义关系信息。在有大量语料输入的前提下，Embedding技术甚至可以挖掘出一些通用知识。 4.1.2 Embedding技术在其他领域的扩展 ​ 与词向量使用大量文本语料进行训练不同，不同领域的训练样本肯定不同，如视频推荐使用用户的观看序列进行电影的Embedding化，而电商平台使用用户的购买历史作为训练样本。 4.1.3 Embedding技术对于深度学习推荐系统的重要性 推荐场景中大量使用one-hot对类别，id型特征进行编码，导致样本特征向量稀疏，不利于深度学习处理，所以需要由Embedding层负责将高维稀疏特征向量转换成低维稠密特征向量。 Embedding本身就是重要的特征向量，表达能力更强。 Embedding对物品、用户相似度的计算是常用的推荐系统召回层技术。适用于对海量备选物品进行快速初筛。 4.2 Word2vec——经典的Embedding方法 4.2.1 什么是Word2vec ​ word to vector，是一个生成对“词”的向量表达的模型。 ​ 假设由一组句子组成的语料库，其中的一个长度为$T$的句子为$w_1, w_2,\cdots,w_T$，假定每个词都跟其最相邻的词的关系最密切，每个词都是由相邻的词决定的（CBOW），或者每个词都决定了相邻的词（skip-gram）。 ​ CBOW模型的输入是$w_T$周围的词，预测的输出是$w_t$，而Skip-gram则相反。 4.2.2 Word2vec模型的训练过程 训练样本：选取一个长度为2c+1的滑动窗口，从语料库中抽取一个句子，将滑动窗口由左至右滑动，每移动一次，窗口中的词组就组成了一个训练样本。 优化目标：每个词$w_t$都决定了相邻的词$w_{t+j}$，基于极大似然估计的方法，希望所有样本的条件概率$p(w_{t+j}|w_t)$之积最大，这里使用对数概率，Word2vec的目标函数如下： \[\frac{1}{T} \sum_{t=1}^{T} \sum_{-c\leq j\leq c,j \neq 0} log p(w_{t+j}|w_t)\] $p(w_{t+j}|w_t)$如何定义：多分类问题，最直接的是使用Softmax函数。$p(w_{t+j}|w_t)$定义如下： \[p(W_O|W_I)=\frac{exp(V'_{W_O}{\mathsf{T}} V_{W_I})}{\sum_{w=1}^{W}exp(V'_{W}{\mathsf{T}} V_{W_I})}\] $w_O$代表$w_{t+j}$，被称为输出词，$w_I$代表$w_t$，被称为输入词。 输入向量表达是输入层到隐层的权重矩阵$W_{V \times N}$，而输出向量表达是隐层到输出层的权重矩阵$W’_{N\times V}$。 ​ 在获得输入向量矩阵$W_{V \times N}$后，每一行对应的权重向量就是“词向量”。 4.2.3 Word2vec的“负采样”训练方法 原始的Word2vec计算量过大，往往采用负采样的方法进行训练，只需要对采样出的几个负样本计算预测误差。Word2vec模型的优化目标从一个读哟分类问题退化成了一个近似二分类问题，式子如下： \(E = -log \sigma (v'_{w_o}{\mathrm{T}} h - \sum_{W_j \in W_{neg}}log \sigma(-v'_{w_j}{\mathrm{T}} h))\) $v’{w_o}$是输出词向量（正样本），h是隐层向量，$W{neg}$是负样本集合，$v’_{w_j}$是负样本词向量。福特样本集合的大小很有限，通常小于10。 4.2.4 Word2vec对Embedding技术的奠基性意义 4.3 Item2vec——Word2vec在推荐系统领域的推广 4.3.1 Item2vec的基本原理 由于Word2vec的流行，越来越多的Embedding方法可以被直接用于物品Embedding向量的生成。 用户Embedding向量这可以通过行为历史中的物品Embedding平均或者聚类得到。 利用用户向量和物品向量的相似性，可以直接在推荐系统的召回层快速得到候选集合，或在排序层直接用于最终推荐列表的排序。 Word2vec利用词序列生成词Embedding。 Item2vec利用的物品序列是由特定用户浏览、购买等行为产生的历史行为记录序列。 Word2vec中一个长度为T的句子为$w_1,w_2,…,w_T$，则其优化目标如公式7所示 假设Item2vec中一个长度为K的用户历史记录为$w_1,w_2,…,w_K$，类比前者，优化目标如下所示： \(\frac{1}{K} \sum_{t=1}^{K} \sum_{j \neq i} log p(w_{j}|w_i)\) 通过观察两个公式可以看到不同在于，Item2vec丢弃了时间窗口的概念，认为序列中任意两个物品都相关，所以在公式中，是两两物品的对数概率的和，而不仅仅是时间窗口内物品的对数概率之和。 优化目标定义好后，其余的训练过程和最终物品Embedding的产生过程，Item2vec与Word2vec完全一致。最终物品向量的查找表就是词向量的查找表。 4.3.2 “广义”的Item2vec 广义上讲，任何可以生成物品向量的方法都可以称作Item2vec，eg双塔模型。 广告侧的模型是对物品进行Embedding，称作“物品塔”，本质是接受物品相关的特征向量。最后输出一个多维的稠密向量 4.3.3 Item2vec方法的特点和局限性 优点：作为Word2vec的推广，理论上可以使用任何序列型数据生成物品的 Embedding向量，大大拓展了Word2vec的使用场景 局限性：只能利用序列型数据，无法处理网络化数据——&amp;gt;Graph Embedding技术出现 4.4 Graph Embedding——引入更多结构信息和图嵌入技术 Graph Embedding是一种对图结构中的节点进行Embedding编码的方法。最终生成的节点Embedding向量包含图的结构信息及附近节点的局部相似性信息。 4.4.1 DeepWalk——基础的Graph Embedding方法 主要思想：在由物品组成的图结构上进行随机游走，产生大量物品序列，然后将这些物品序列作为训练样本输入Word2vec进行训练，得到物品的Embedding。是链接序列Embedding和Graph Embedding的过渡方法。 DeepWalk算法流程： 原始用户行为序列 基于用户行为序列，构建物品关系图。如果后续产生多条相同的有向边，则有向边的权重加强。将所有用户行为序列都转换为物品关系图中的边之后，全局的物品关系图就建立起来了 采用随机游走的方式，随机选择起始点，重新产生物品序列。 将这些物品序列输入Word2vec模型中，生成最终的物品Embedding向量。 随机游走的跳转概率（到达节点$v_i$后，下一步遍历$v_i$的邻接点$v_j$的概率）: ​ 若物品关系图是有向有权图，从节点$v_i$跳转到$v_j$的概率为： \(P(v_j|v_i)= \left\{ \begin{array}{cc} \frac{M_{ij}}{\sum_{j\in N_+(v_i)}M_{ij}}, &amp;amp; v_j \in N_+(v_i) \\ 0, &amp;amp; e_{ij} \notin \varepsilon \end{array} \right.\) $\varepsilon$是物品关系图中所有边的集合，$ N_+(v_i)$是节点$v_i$所有的出边集合，$M_{ij}$是节点$v_i$到$v_j$边的权重。==即，DeepWalk的跳转概率是跳转边的权重站所有相关出边的权重之和的比例== 若物品关系图是无向无权图，则$M_{ij}$为1，且$ N_+(v_i)$是节点$v_i$的所有边的集合。 4.4.2 Node2vec——同质性和结构性的权衡 4.4.3 EGES——阿里巴巴的综合性Graph Embedding方法 ### 4.5 Embedding与深度学习推荐系统的结合 4.5.1 深度学习网络中的Embedding层 4.5.2 Embedding的预训练方法 4.5.3 Embedding作为推荐系统召回层的方法 ### 4.6 局部敏感哈希——让Embedding插上翅膀的快速搜索方法 4.6.1 “快速”Embedding最近邻搜索 4.6.2 局部敏感哈希的基本原理 4.6.3 局部敏感哈希多桶策略 第五章、多角度审视推荐系统 第六章、深度学习推荐系统的工程实现 第七章、推荐系统的评估 第八章、深度学习推荐系统的前沿实践 第九章、构建属于你自己的推荐系统知识框架</summary></entry><entry><title type="html">template</title><link href="https://duanyc.top//2021/01/23/template.html" rel="alternate" type="text/html" title="template" /><published>2021-01-23T00:00:00+08:00</published><updated>2021-01-23T00:00:00+08:00</updated><id>https://duanyc.top//2021/01/23/template</id><content type="html" xml:base="https://duanyc.top//2021/01/23/template.html">&lt;p&gt;This is an article template.&lt;/p&gt;
+
+&lt;p&gt;git commit -m “add paper reading notes(…)”
+git commit -m “update DLRS reading notes”
+git commit -m “add Tutorial(…)”&lt;/p&gt;</content><author><name>DuanYuchen</name><email>duanyuchen55@gmail.com</email></author><category term="template" /><summary type="html">This is an article template. git commit -m “add paper reading notes(…)” git commit -m “update DLRS reading notes” git commit -m “add Tutorial(…)”</summary></entry><entry><title type="html">Welcome</title><link href="https://duanyc.top//2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://duanyc.top//2018/07/01/welcome</id><content type="html" xml:base="https://duanyc.top//2018/07/01/welcome.html">&lt;p&gt;If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:&lt;/p&gt;
 
 &lt;p&gt;You may want to &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration&quot;&gt;config the site&lt;/a&gt; or &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts&quot;&gt;writing a post&lt;/a&gt; next. Please feel free to &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/issues&quot;&gt;create an issue&lt;/a&gt; or &lt;a href=&quot;mailto:kitian616@outlook.com&quot;&gt;send me email&lt;/a&gt; if you have any questions.&lt;/p&gt;
 
